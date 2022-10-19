@@ -1,4 +1,3 @@
-
 :root{
     --color-primario: #96e65a;
     --color-secundario: #082BA5;
@@ -20,7 +19,7 @@ body{
     background-color: var(--color-fondo);
 }
 
-/* INICIO DE MENU */
+/* --------------------------------- INICIO DE MENU ---------------------------------*/
 
 header{
     background-color: rgb(78, 76, 76);
@@ -95,7 +94,7 @@ header{
     transform: translateY(-100%);
 }
 
-/* PROPIEDADES PARA DISPOSITIVOS MOVILES */
+/* -------------- PROPIEDADES PARA DISPOSITIVOS MOVILES --------------*/
 @media screen and (max-width:1000px){
     header .menu{
         flex-direction: column;
@@ -122,6 +121,9 @@ header{
     }
 }
 
-/* FIN PROPIEDADES PARA DISPOSITIVOS MOVILES */
+/* -------------- FIN PROPIEDADES PARA DISPOSITIVOS MOVILES  --------------*/
+/* --------------------------------- FIN DE MENU ---------------------------------*/
 
-/* FIN DE MENU */
+/* --------------------------------- INICIO BANNER ---------------------------------*/
+
+/* --------------------------------- FIN BANNER ---------------------------------*/
