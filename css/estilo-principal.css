@@ -1,11 +1,12 @@
 
 :root{
-    --color-primario: #EC111A;
+    --color-primario: #96e65a;
     --color-secundario: #082BA5;
     --color-terciario: #007BDF;
-    --color-sombras: #282D31;
+    --color-sombras: #c3ccd2;
     --color-titulos: #282D31;
-    --color-textos: #cad1d6;
+    --color-textos: #edf2f6;
+    --color-enlaces: yellow;
     --color-fondo: #FAFDFF;
 }
 
@@ -22,8 +23,8 @@ body{
 /* INICIO DE MENU */
 
 header{
-    background-color: #fff;
-    position: sticky;
+    background-color: rgb(78, 76, 76);
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -45,7 +46,7 @@ header{
 }
 
 .menu .logo img{
-    height: 120px;
+    height: 80px;
 }
 
 .menu .btn-menu{
@@ -58,16 +59,27 @@ header{
 }
 
 .menu .enlaces a{
-    color: var(--color-titulos);
+    color: var(--color-primario);
     text-decoration: none;
     padding: 1.2em;
     font-size: .9em;
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto Mono', monospace;
     font-weight: bold;
+    letter-spacing: 1px;
     text-align: center;
 }
 
 .menu .enlaces a:hover{
+    color: var(--color-enlaces);
+}
+
+.menu .icono-redes i{
+    color: var(--color-fondo);
+    text-align: left;
+
+}
+
+.menu .icono-redes i:hover{
     color: var(--color-primario);
 }
 
