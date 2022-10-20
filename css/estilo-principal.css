@@ -208,16 +208,16 @@ header{
 
 .descripcion-parrafo{
     text-align: center;
-    font-family:open sans,sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(101, 101, 101);
-    font-size: 14px;
+    font-size: 14.5px;
     
 }
 
 .descripcion-titulo{
     text-align: center;
     color: rgb(101, 101, 101);
-    font-size: 45px;
+    font-size: 46px;
     letter-spacing: normal;
     font-family: 'Playfair Display', serif;
 }
