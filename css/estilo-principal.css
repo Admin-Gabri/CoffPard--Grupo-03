@@ -22,7 +22,7 @@ body{
 /* --------------------------------- INICIO DE MENU ---------------------------------*/
 
 header{
-    background-color: rgb(78, 76, 76);
+    background-color: #7f181b;
     position: absolute;
     width: 100%;
     top: 0;
@@ -58,7 +58,7 @@ header{
 }
 
 .menu .enlaces a{
-    color: var(--color-primario);
+    color: var(--color-textos);
     text-decoration: none;
     padding: 1.2em;
     font-size: .9em;
@@ -72,6 +72,7 @@ header{
     color: var(--color-enlaces);
 }
 
+
 .menu .icono-redes i{
     color: var(--color-fondo);
     text-align: left;
@@ -79,7 +80,7 @@ header{
 }
 
 .menu .icono-redes i:hover{
-    color: var(--color-primario);
+    color: var(--color-enlaces);
 }
 
 .headroom{
@@ -182,3 +183,49 @@ header{
     font-family: 'Noto Sans Ethiopic', sans-serif;
 }
 /* --------------------------------- FIN BANNER ---------------------------------*/
+
+/* --------------------------------- INICIO DESCRIPCION ---------------------------------*/
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-fondo);
+    padding: 80px 80px;
+}
+
+.cabecera{
+    display: flex;
+    width: 800px;
+    height: auto;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.contenedor .imagen-descripcion{
+    width: 100%;
+}
+
+.descripcion-parrafo{
+    text-align: center;
+    font-family:open sans,sans-serif;
+    color: rgb(101, 101, 101);
+    font-size: 14px;
+    
+}
+
+.descripcion-titulo{
+    text-align: center;
+    color: rgb(101, 101, 101);
+    font-size: 45px;
+    letter-spacing: normal;
+    font-family: 'Playfair Display', serif;
+}
+
+.descripcion-subtitulo{
+    text-align: center;
+    color: rgb(101, 101, 101);
+    letter-spacing: normal;
+    font-family: 'Playfair Display', serif;
+}
+/* --------------------------------- FIN DESCRIPCION ---------------------------------*/
