@@ -68,7 +68,9 @@ section{
     background-position: center center;
     height: calc(100vh - 80px)
 }
-/*Responsive para dispositivos moviles*/
+
+/*-------------- Responsive para dispositivos moviles --------------------*/
+
 @media (max-width: 952px){
     .enlace{
         padding-left: 20px;
