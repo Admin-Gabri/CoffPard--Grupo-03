@@ -63,7 +63,7 @@ li a.active, li a:hover{
 }
 
 section{
-    background: url(/img/Fondo\ Cafeteria\ \(3\).jpg);
+    background: url(/img/Fondo\ Cafeteria.jpg);
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px)
