@@ -52,10 +52,11 @@ li a.active, li a:hover{
     font-size: 30px;
     color: #fff;
     float: right;
-    line-height: 80px;
+    line-height: 100px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    padding: 25px 0 25px;
 }
 
 #check{
