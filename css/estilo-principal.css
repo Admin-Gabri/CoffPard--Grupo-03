@@ -1,254 +1,116 @@
-:root{
-    --color-primario: #96e65a;
-    --color-secundario: #082BA5;
-    --color-terciario: #007BDF;
-    --color-sombras: #c3ccd2;
-    --color-titulos: #282D31;
-    --color-textos: #edf2f6;
-    --color-enlaces: yellow;
-    --color-fondo: #FAFDFF;
-}
-
-*, *::before, *::after{
+*{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--color-fondo);
-}
-
-/* --------------------------------- INICIO DE MENU ---------------------------------*/
-
-header{
-    background-color: #7f181b;
-    position: static;
+nav{
+    background-color: #8a4b38;
+    height: 80px;
     width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 3px 2px 4px #000;
 }
 
-.menu{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.enlace{
+    position: absolute;
+    padding: 0 50px;
 }
 
-.menu .logo{
-    display: inline-block;
-    margin-right: 1em;
-}
-
-.menu .logo img{
+.logo{
     height: 80px;
 }
 
-.menu .btn-menu{
-    display: none;
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
 
-.menu .enlaces{
+nav ul li{
     display: inline-block;
-    text-align: right;
-}
-
-.menu .enlaces a{
-    color: var(--color-textos);
-    text-decoration: none;
-    padding: 1.2em;
-    font-size: .9em;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-.menu .enlaces a:hover{
-    color: var(--color-enlaces);
-}
-
-
-.menu .icono-redes i{
-    color: var(--color-fondo);
-    text-align: left;
-
-}
-
-.menu .icono-redes i:hover{
-    color: var(--color-enlaces);
-}
-
-.headroom{
-    transition: transform .3s ease;
-}
-
-.headroom--pinned{
-    transform: translateY(0%);
-}
-
-.headroom--unpinned{
-    transform: translateY(-100%);
-}
-
-/* -------------- PROPIEDADES PARA DISPOSITIVOS MOVILES --------------*/
-@media screen and (max-width:1000px){
-    header .menu{
-        flex-direction: column;
-    }
-
-    header .menu .logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    header .menu .btn-menu{
-        display: inline-block;
-        color: var(--color-primario);
-        font-size: 1.7em;
-        margin-top: 0.6em;
-    }
-
-    header .menu{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/* -------------- FIN PROPIEDADES PARA DISPOSITIVOS MOVILES  --------------*/
-/* --------------------------------- FIN DE MENU ---------------------------------*/
-
-/* --------------------------------- INICIO BANNER ---------------------------------*/
-.main-banner{
-    position: relative;
-    padding: 16em 0 18em;
-    top: 0.2em;
-}
-
-.main-banner::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    mix-blend-mode: color;
-}
-
-.main-banner-img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.container{
-    position: relative;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.centrado{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.main-banner-titulo{
-    color: #FFF;
-    font-size: 7.5em;
-    font-family: 'Playfair Display', serif;
-}
-
-.main-banner-parrafo{
-    color: #fff;
-    font-size: 1.2em;
-    margin-top: -10px;
-    font-family: 'Noto Sans Ethiopic', sans-serif;
-}
-/* --------------------------------- FIN BANNER ---------------------------------*/
-
-/* --------------------------------- INICIO DESCRIPCION ---------------------------------*/
-
-.contenedor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-fondo);
-    padding: 80px 80px;
-}
-
-.cabecera{
-    display: flex;
-    width: 800px;
-    height: auto;
-    background: #fff;
-    border-radius: 2px;
-}
-
-.contenedor .imagen-descripcion{
-    width: 100%;
-}
-
-.descripcion-parrafo{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(101, 101, 101);
-    font-size: 14.5px;
+    line-height: 80px;
+    margin: 0 5px;
     
 }
 
-.descripcion-titulo{
-    text-align: center;
-    color: rgb(101, 101, 101);
-    font-size: 46px;
-    letter-spacing: normal;
-    font-family: 'Playfair Display', serif;
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
-.descripcion-subtitulo{
-    text-align: center;
-    color: rgb(101, 101, 101);
-    letter-spacing: normal;
-    font-family: 'Playfair Display', serif;
+li a.active, li a:hover{
+    background: #623528;
+    transition: .7s;
+    color: white;
 }
-/* --------------------------------- FIN DESCRIPCION ---------------------------------*/
 
-/*@media screen and (max-width:800px){
-    .contenedor{
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url(/img/Fondo\ Cafeteria\ \(3\).jpg);
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px)
+}
+/*Responsive para dispositivos moviles*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
         width: 100%;
-        padding: 80px 80px;
-        box-sizing: border-box;
-        
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
     }
 
-    .cabecera{
-        width: 50%;
-        box-sizing: border-box;
-        justify-content: center;
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    
+    nav ul li a{
+        font-size: 20px;
     }
 
-    .contenedor .imagen-descripcion{
-        width: 50%;
-        justify-content: space-between;
+    li a:hover, li a.active{
+        background: none;
+        color: red;
     }
 
-    .descripcion-banner{}
-}*/
-/* --------------------------------- FIN DESCRIPCION ---------------------------------*/
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
